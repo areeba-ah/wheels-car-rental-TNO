@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="getNum">Enter your day</label>
+    <input type="text" id="getNum" placeholder="Enter values between 1 to 7..."><br>
+    <span id="dayInfo"></span><br><br>
+    <button type="button" onclick="dayFinder()">Get Day</button>
+    
+</body>
+
+<script>
+    function dayFinder(){
+        let dayNumber = document.getElementById("getNum").value;
+        let dayResult = document.getElementById("dayInfo");
+        switch(parseInt(dayNumber)){
+            case 1:
+                dayResult.innerHTML ="Today is Monday";
+                dayResult.style.backgroundColor ="yellow";
+                dayResult.style.fontSize ="25px";
+                break;
+
+            case 2:
+                dayResult.innerHTML ="Today is Tuesday";
+                break;
+
+            case 3:
+                dayResult.innerHTML ="Today is Wednesday";
+                break;
+
+            case 4:
+                dayResult.innerHTML ="Today is Thurday";
+                break;
+
+
+            case 5:
+                dayResult.innerHTML ="Today is Friday";
+                break;
+
+            case 6:
+                dayResult.innerHTML ="Today is Saturday";
+                break;
+
+
+            case 7:
+                dayResult.innerHTML ="Today is Sunday";
+                break;
+
+            default:
+                   dayResult.innerHTML ="Please type between 1 to 7";
+        }
+    }
+</script>
+</html>

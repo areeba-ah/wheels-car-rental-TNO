@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Sixtyfour&display=swap');
+
+/* margins
+    (tb,lr) --> margin: 0 50px;
+
+    (t, r, b, l) --> margin: 1px 1px 1px 1px;
+*/
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --global-font-family: "Roboto","Verdana";
+    --global-font-size:18px;
+}
+
+body{
+    font-family: var(--global-font-family);
+    font-size: var(--global-font-size);
+}
+/* start of nav settings */
+.navSettings{
+    background-color: #e9e96d;
+    height: 36px;
+    padding-top: 5px;
+}
+
+/* ">" parent cheild relationship */
+.navSettings > a{
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 30px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding: 9px;
+    color: #2b2b1d;
+}
+/* .navSettings > a:first-child{ 
+    background-color: #2b2b1d;
+    color: yellow;
+}*/
+
+.navSettings > a:hover{
+    background-color: #2b2b1d;
+    color: yellow;
+}
+
+/* end of nav settings */
+
+/* start of main setting */
+.mainSettings{
+     /*  */
+}
+
+.dSettings{
+   text-align: center;
+   width: 100%;
+}
+
+.divTitle{
+    font-size: 40px;
+    letter-spacing: 10px;
+    color: rgba(0, 0, 0, 0.633);
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    
+}
+
+.tAlign{
+    text-align: center;
+}
+    /* start of home setting */
+    .homeSet{
+        position: relative;
+        font-weight: 900;
+        background-color: black;
+    }
+
+    .siteTitle{
+        position: absolute;
+        top: 280px;
+        /* left:400px;
+        right:400px; */
+
+        left: 0px;
+        right: 0px;
+        margin: 0 auto;
+        color: #e9e96d;
+        font-size: 60px;
+        font-family: "Ojuju", sans-serif;
+        font-weight: 900;
+        z-index: 10;
+        background-color: #33330ac5;
+    }
+
+    .titleInfo{
+        position: absolute;
+        top: 380px;
+        left:0;
+        right:0;
+        /* margin: 0 auto; */
+        color: #e9e96d;
+        font-size: 40px;
+        font-family: "Roboto", sans-serif;                                                                                                                                                    
+        font-weight: 900;
+        z-index: 10;
+        background-color: #33330abf;
+    }
+
+    .home_bg{
+        position: relative;
+        height: auto;
+        width:100%;
+    }
+
+    .carInfo{
+        color: #ffffff;
+
+    }
+
+    /* end of home setting */
+
+    /* start of service setting */
+    .serviceSet{
+        padding: 50px;
+    }
+
+    .serviceInfo{
+        text-align: left;
+        font-size: 16px;
+        padding-top: 20px;
+    }
+
+    .sList{
+        text-align: left;
+        font-size: 12px;
+        padding: 10px;
+
+    }
+    /* end of service setting */
+
+    /* start of Rent settings */
+
+    .rentSet{
+        position: relative;
+    }
+    
+    .parentContainer{
+        position: relative;
+        display: flex;
+    }
+
+    .childContainer{
+        position: relative;
+        flex:content;
+        margin: auto 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 3px gainsboro;
+        border-radius: 15px;
+        height: 680px;
+        object-fit: cover;
+    }
+
+    .rImg{
+        height: 580px;
+        width: 100%;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+    .rName{
+        position: relative;
+        margin: auto;
+        top: 40px;
+        font-size: 25px;
+        left: 50px;
+        right: 50px;
+        right: 0;
+    }
+
+    .rBtn{
+        position: relative;
+        margin: auto;
+        top: 100px;
+        left: 120px;
+        right: 120px;
+
+    }
+    /* end of rent setting */
+
+
+    /* start of about setting */
+    .aboutSet{
+        position: relative;
+        padding: 50px;
+        
+    }
+
+    .aTitle,.aInfo{
+        text-align: left;
+    }
+
+    .aboutContainer{
+        display: table;
+        padding: 50px 0;
+    }
+
+    .aboutDiv{
+        display: table-cell;
+        vertical-align: middle;
+       
+    }
+
+    .aboutDiv1{
+        width:50%;
+        padding: 60px;
+        background-color: #e9e96d;
+     
+    }
+
+    .aboutDiv2{
+        width: 30%;
+    }
+
+    .aboutDiv1>ul{
+        list-style: none;
+        text-align: justify;
+    }
+
+    .aboutDiv1 >ul>li{
+        margin: 10px;
+        border-bottom: solid;
+    }
+
+    .aboutDiv1 >ul>li:nth-child(1){
+        color: rgb(18, 130, 93);
+    }
+
+    .aboutDiv1 >ul>li:nth-child(2){
+        color: rgb(28, 77, 182);
+    }
+
+    .aboutDiv1 >ul>li:nth-child(3){
+        color: rgb(66, 73, 8);
+    }
+
+    .aboutDiv1 >ul>li:nth-child(4){
+        color: rgb(162, 32, 80);
+    }
+
+    .aboutDiv1 >ul>li:nth-child(5){
+        color: rgb(152, 28, 143);
+    }
+
+    /* add bootstrap icons */
+    .aboutDiv1>ul>li::before{
+        content: "\F271";
+        font-family: "Bootstap-icons";
+    }
+
+    .aboutDiv2 >img{
+        width: auto;
+        height: 500px;
+    }
+
+    .gifImg{
+        height: 300;
+        width: 300;
+        position: relative;
+        object-fit: cover;
+    }
+    /* end of about setting */
+
+
+    /* start of contact setting */
+    .contactSet{
+        /* height:500px;  */
+        /* background-color: #80a7f0; */
+    }
+
+    .contactForm{
+        background-color: #e9e96d;
+        padding: 5% 25%;
+    }
+
+    .contactForm >input {
+        width: 75%;
+        padding: 2px;
+    }
+
+    .contactForm >textarea {
+        width: 75%;
+        padding: 1px;
+    }
+    /* end of contact setting */
+
+/* end of main settings */
+
+footer{
+    background-color: #cbc5c58f;
+    /* height: 60px; */
+    font-size:20px;
+    text-align: center;
+}
+
+

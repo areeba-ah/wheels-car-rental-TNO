@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Sixtyfour&display=swap');
+
+/* margins
+    (tb,lr) --> margin: 0 50px;
+
+    (t, r, b, l) --> margin: 1px 1px 1px 1px;
+*/
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --global-font-family: "Roboto","Verdana";
+    --global-font-size:18px;
+}
+
+body{
+    font-family: var(--global-font-family);
+    font-size: var(--global-font-size);
+}
+/* start of nav settings */
+.navSettings{
+    background-color: #e9e96d;
+    height: 36px;
+    padding-top: 5px;
+}
+
+/* ">" parent cheild relationship */
+.navSettings > a{
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 30px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding: 9px;
+    color: #2b2b1d;
+}
+/* .navSettings > a:first-child{ 
+    background-color: #2b2b1d;
+    color: yellow;
+}*/
+
+.navSettings > a:hover{
+    background-color: #2b2b1d;
+    color: yellow;
+}
+
+/* end of nav settings */
+
+/* start of main setting */
+.mainSettings{
+     background-color: #9d320b;
+}
+
+#gifImg{
+    height: 300;
+    width: 400;
+}
+
+
+.dSettings{
+    text-align: center;
+    width: 100%;
+ }
+ 
+ .divTitle{
+     font-size: 40px;
+     letter-spacing: 10px;
+     color: rgba(0, 0, 0, 0.633);
+     font-family: "Archivo Black", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     position: relative;
+     
+ }
+ 
+ .tAlign{
+     text-align: center;
+ }
+
+/* end of main settings */
+
